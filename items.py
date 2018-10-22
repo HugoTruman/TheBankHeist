@@ -166,6 +166,152 @@ item_boilersuit = {
     "discrete":-10
 }
 
+item_ghostbusters = {
+    "id": "ghost busters suit",
+
+    "name": "ghost buster suit",
+
+    "description":
+        "Used to hide your normal cloths while also making it look like you are"
+        "an authentic ghost buster.",
+    "mass":1.5,
+    "value":30,
+    "discrete":-20
+}
+
+item_backpack = {
+    "id": "back pack",
+
+    "name": "back pack",
+
+    "description":
+        "This helps you to carry more items, while also looking stylish.",
+    "mass":-60,
+    "value":20,
+    "discrete":0
+}
+
+item_sportsbag = {
+    "id": "sports bag",
+
+    "name": "sports bag",
+
+    "description":
+        "This helps you carry alot more items at a time.",
+    "mass":-120,
+    "value":50,
+    "discrete":1
+}
+
+item_fakegun = {
+    "id": "fake gun",
+
+    "name": "fake gun",
+
+    "description":
+        "This gun is fake. But you might get away with it looking real",
+    "mass":0.5,
+    "value":5,
+    "discrete":10
+}
+
+item_twizzler = {
+    "id": "twizzler",
+
+    "name": "twizzler",
+
+    "description":
+        "This is very very pointless this can not be used in anyway.",
+    "mass":.5,
+    "value":100,
+    "discrete":100
+}
+
+item_C4 = {
+    "id": "C4",
+
+    "name": "C4",
+
+    "description":
+        "This can be used to blow stuff up. It is loud.",
+    "mass":3,
+    "value":30,
+    "discrete":40
+}
+
+item_cartoonbomb = {
+    "id": "cartoon bomb",
+
+    "name": "cartoon bomb",
+
+    "description":
+        "Does not do much apart form look good",
+    "mass":5,
+    "value":10,
+    "discrete":10
+}
+
+item_sparkler = {
+    "id": "sparkler",
+
+    "name": "sparkler",
+
+    "description":
+        "Looks pretty",
+    "mass":0.1,
+    "value":2,
+    "discrete":5
+}
+
+
+
+item_drill = {
+    "id": "drill",
+
+    "name": "drill",
+
+    "description":
+        "Can be used to drive in screws or rob banks",
+    "mass":2,
+    "value":25,
+    "discrete":20
+}
+
+item_whiteoveralls = {
+    "id": "white overalls",
+
+    "name": "white overalls",
+
+    "description":
+        "To make you look like a paint",
+    "mass":0.5,
+    "value":5,
+    "discrete":3
+}
+
+item_axe = {
+    "id": "axe",
+
+    "name": "axe",
+
+    "description":
+        "If you are cuaght holding this in public you may get some odd looks",
+    "mass":5,
+    "value":10,
+    "discrete":30
+}
+
+item_stethoscopese = {
+    "id": "stethoscopes",
+
+    "name": "stethoscopes",
+
+    "description":
+        "Can be used to hear quiet noises, like the tick of a bank vault opening",
+    "mass":0.4,
+    "value":15,
+    "discrete":1
+}
 items = {
     "id": item_id,
     "password": item_password,
@@ -181,7 +327,16 @@ items = {
     "kirill mask":item_kirillmask,
     "clown mask":item_clownmask,
     "boiler suit":item_boilersuit,
-
-
-
+    "ghost buster suit":item_ghostbusters,
+    "back pack":item_backpack,
+    "sports bag":item_sportsbag,
+    "fake gun":item_fakegun,
+    "twizzler":item_twizzler,
+    "C4":item_C4,
+    "cartoon bomb":item_cartoonbomb,
+    "sparkler":item_sparkler,
+    "drill":item_drill,
+    "white overalls":item_whiteoveralls,
+    "axe":item_axe,
+    "stethoscopes":item_stethoscopese
 }

@@ -91,7 +91,7 @@ room_gun = {
 
     "exits": {"east": "Van", "west":"Hardware Store"},
 
-    "items": []
+    "items": [item_pistol, item_shotgun, item_grenade, item_smoke, item_smg, item_rpg]
 
 }
 
@@ -105,7 +105,7 @@ room_firework = {
 
     "exits": {"west": "Van", "east": "Costume Store"},
 
-    "items": []
+    "items": [item_sparkler, item_cartoonbomb, item_C4, item_twizzler]
 
 }
 
@@ -120,7 +120,7 @@ room_costume = {
 
     "exits": {"east": "Fireworks Store"},
 
-    "items": []
+    "items": [item_pigmask, item_kirillmask, item_clownmask, item_boilersuit, item_ghostbusters, item_backpack, item_sportsbag, item_fakegun]
 
 }
 room_hardware = {
@@ -132,7 +132,7 @@ room_hardware = {
 
     "exits": {"east": "Gun Store"},
 
-    "items": []
+    "items": [item_drill, item_whiteoveralls, item_axe, item_stethoscopese]
 
 }
 
