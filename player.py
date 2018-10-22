@@ -1,9 +1,9 @@
 from items import *
-from map import rooms
+from Map import rooms
 
-inventory = [item_id, item_laptop, item_money]
+inventory = []
 
 # Start game at the reception
-current_room = rooms["Reception"]
+current_room = rooms["Van"]
 
 current_carry_mass = 0
