@@ -115,6 +115,9 @@ def execute_drop(item_id):
 		else:
 			current_room['items'].append(cur_item)
 			inventory.remove(cur_item)
+
+def execute_buy(item_id):
+	#This 
 	
 
 def execute_command(command):
@@ -178,8 +181,6 @@ THE BANK HEIST
 
 		# Show the menu with possible actions and ask the player
 		command = menu(current_room["exits"], current_room["items"], inventory)
-
-		# Execute the player's command
 		execute_command(command)
 
 
