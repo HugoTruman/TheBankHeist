@@ -28,15 +28,27 @@ room_front_desk = {
     "items": [item_id]
 }
 
+room_vault_door = {
+    "name": "The Vault Door",
+
+    "description":
+    """You go down a flight of stairs to the vault Door. You see a massive 
+    vault door. You need to think of a way to get past.""",
+
+    "exits": {"south": "Front Desk", "north":"Vault"},
+
+    "items":[],
+}
+
+
 room_vault = {
     "name": "The Vault",
 
     "description":
-    """You go down a flight of stairs to the vault use the key 
-    to get in. all you see is Money, Money and Money. you start 
+    """All you see is Money, Money and Money. you start 
     wishing you had brought a bigger bag""",
 
-    "exits": {"south": "Front Desk"},
+    "exits": {"south": "Vault Door"},
 
     "items": [item_money]
 }
@@ -61,7 +73,7 @@ room_break = {
     "description":
     """The room you are stood in is very basic, a desk and 
     kitchen. Conviently on the desk there is a peice of paper 
-    written on it say password for the security room.""",
+    written on it say password for the security room and an ID card.""",
 
     "exits": {"west": "Front Desk"},
 
@@ -91,7 +103,7 @@ room_gun = {
 
     "exits": {"east": "Van", "west":"Hardware Store"},
 
-    "items": []
+    "items": [item_pistol, item_shotgun, item_grenade, item_smoke, item_smg, item_rpg]
 
 }
 
@@ -105,7 +117,7 @@ room_firework = {
 
     "exits": {"west": "Van", "east": "Costume Store"},
 
-    "items": []
+    "items": [item_sparkler, item_cartoonbomb, item_C4, item_twizzler]
 
 }
 
@@ -120,7 +132,7 @@ room_costume = {
 
     "exits": {"east": "Fireworks Store"},
 
-    "items": []
+    "items": [item_pigmask, item_kirillmask, item_clownmask, item_boilersuit, item_ghostbusters, item_backpack, item_sportsbag, item_fakegun]
 
 }
 room_hardware = {
@@ -132,13 +144,14 @@ room_hardware = {
 
     "exits": {"east": "Gun Store"},
 
-    "items": []
+    "items": [item_drill, item_whiteoveralls, item_axe, item_stethoscopese]
 
 }
 
 rooms = {
     "Foyer": room_foyer,
     "Front Desk": room_front_desk,
+    "Vault Door":room_vault_door,
     "Vault": room_vault,
     "Security Room": room_security,
     "Break Room": room_break,
@@ -147,5 +160,6 @@ rooms = {
     "Fireworks Store":room_firework,
     "Costume Store":room_costume,
     "Hardware Store":room_hardware
+
 
 }
