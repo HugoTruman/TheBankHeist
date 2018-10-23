@@ -73,6 +73,9 @@ def sum_carry_items_weight():
 	return total
 
 def execute_use(item_id):
+	global current_room
+	if item_id in current_room['uses'] and item_id in inventory:
+		
 
 
 
