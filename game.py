@@ -1,6 +1,5 @@
-from Map import rooms
+from map_and_items import *
 from player import *
-from items import *
 from gameParser import *
 
 def list_of_items(items):

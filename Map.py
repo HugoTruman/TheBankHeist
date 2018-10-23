@@ -12,7 +12,7 @@ room_foyer = {
 
     "items": [],
 
-    "uses": [item_pigmask, item_kirillmask, item_clownmask, item_boilersuit, item_ghostbusters, item_whiteoveralls]
+    "uses": [all_items['pig mask'], all_items["kirill mask"], all_items["clown mask"], all_items["boiler suit"], all_items["ghost buster suit"], all_items["white overalls"]]
 }
 
 room_front_desk = {
@@ -27,11 +27,11 @@ room_front_desk = {
 
     "exits":  {"north": "Vault", "east": "Break Room", "south":"Foyer", "west":"Security Room" },
 
-    "items": [item_id],
+    "items": [all_items["id"]],
 
-    "uses": [item_pigmask, item_kirillmask, item_clownmask, item_boilersuit, item_ghostbusters, item_whiteoveralls,
-             item_pistol, item_shotgun, item_grenade, item_smoke, item_smg, item_rpg, item_fakegun, item_axe,
-             item_id, item_password]
+    "uses": [all_items['pig mask'], all_items["kirill mask"], all_items["clown mask"], all_items["boiler suit"], all_items["ghost buster suit"], all_items["white overalls"],
+             all_items["pistol"], all_items["shotgun"], all_items["grenade"], all_items["smoke bomb"], all_items["smg"], all_items["rpg"], all_items["fake gun"], all_items["axe"],
+             all_items["id"], all_items["password"]]
 }
 
 room_vault_door = {
@@ -45,8 +45,8 @@ room_vault_door = {
 
     "items":[],
 
-    "uses": [item_pigmask, item_kirillmask, item_clownmask, item_boilersuit, item_ghostbusters, item_whiteoveralls,
-             item_C4, item_drill, item_stethoscopese]
+    "uses": [all_items['pig mask'], all_items["kirill mask"], all_items["clown mask"], all_items["boiler suit"], all_items["ghost buster suit"], all_items["white overalls"],
+             all_items["C4"], all_items["drill"], all_items["stethoscopes"]]
 }
 
 
@@ -59,9 +59,9 @@ room_vault = {
 
     "exits": {"south": "Vault Door"},
 
-    "items": [item_money],
+    "items": [all_items["money"]],
 
-    "uses": [item_pigmask, item_kirillmask, item_clownmask, item_boilersuit, item_ghostbusters, item_whiteoveralls]
+    "uses": [all_items['pig mask'], all_items["kirill mask"], all_items["clown mask"], all_items["boiler suit"], all_items["ghost buster suit"], all_items["white overalls"]]
 }
 
 room_security = {
@@ -75,9 +75,9 @@ room_security = {
 
     "exits": {"east": "Front Desk"},
 
-    "items": [item_tape],
+    "items": [all_items["tape"]],
 
-    "uses": [item_pigmask, item_kirillmask, item_clownmask, item_boilersuit, item_ghostbusters, item_whiteoveralls]
+    "uses": [all_items['pig mask'], all_items["kirill mask"], all_items["clown mask"], all_items["boiler suit"], all_items["ghost buster suit"], all_items["white overalls"]]
 }
 
 room_break = {
@@ -90,9 +90,9 @@ room_break = {
 
     "exits": {"west": "Front Desk"},
 
-    "items": [item_password],
+    "items": [all_items["password"]],
 
-    "uses": [item_pigmask, item_kirillmask, item_clownmask, item_boilersuit, item_ghostbusters, item_whiteoveralls]
+    "uses": [all_items['pig mask'], all_items["kirill mask"], all_items["clown mask"], all_items["boiler suit"], all_items["ghost buster suit"], all_items["white overalls"]]
 }
 
 room_van = {
@@ -106,7 +106,7 @@ room_van = {
 
     "items": [],
 
-    "uses": [item_pigmask, item_kirillmask, item_clownmask, item_boilersuit, item_ghostbusters, item_whiteoveralls]
+    "uses": [all_items['pig mask'], all_items["kirill mask"], all_items["clown mask"], all_items["boiler suit"], all_items["ghost buster suit"], all_items["white overalls"]]
 
 }
 
@@ -120,7 +120,7 @@ room_gun = {
 
     "exits": {"east": "Van", "west":"Hardware Store"},
 
-    "items": [item_pistol, item_shotgun, item_grenade, item_smoke, item_smg, item_rpg]
+    "items": [all_items["pistol"], all_items["shotgun"], all_items["grenade"], all_items["smoke bomb"], all_items["smg"], all_items["rpg"]]
 
 }
 
@@ -134,7 +134,7 @@ room_firework = {
 
     "exits": {"west": "Van", "east": "Costume Store"},
 
-    "items": [item_sparkler, item_cartoonbomb, item_C4, item_twizzler]
+    "items": [all_items["sparkler"], all_items["cartoon bomb"], all_items["C4"], all_items["twizzler"]]
 
 }
 
@@ -149,7 +149,7 @@ room_costume = {
 
     "exits": {"east": "Fireworks Store"},
 
-    "items": [item_pigmask, item_kirillmask, item_clownmask, item_boilersuit, item_ghostbusters, item_backpack, item_sportsbag, item_fakegun]
+    "items": [all_items['pig mask'], all_items["kirill mask"], all_items["clown mask"], all_items["boiler suit"], all_items["ghost buster suit"], all_items["back pack"], all_items["sports bag"], all_items["fake gun"]]
 
 }
 room_hardware = {
@@ -161,7 +161,7 @@ room_hardware = {
 
     "exits": {"east": "Gun Store"},
 
-    "items": [item_drill, item_whiteoveralls, item_axe, item_stethoscopese]
+    "items": [all_items["drill"], all_items["white overalls"], all_items["axe"], all_items["stethoscopes"]]
 
 }
 
