@@ -116,7 +116,7 @@ def execute_drop(item_id):
 			current_room['items'].append(cur_item)
 			inventory.remove(cur_item)
 
-#def execute_buy(item_id):
+def execute_buy(item_id):
 	#This 
 	global current_room
 	if item_id not in current_room["items"]:
