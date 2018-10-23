@@ -116,16 +116,14 @@ def execute_drop(item_id):
 			current_room['items'].append(cur_item)
 			inventory.remove(cur_item)
 
-def execute_buy(item_id):
+#def execute_buy(item_id):
 	#This 
 	
 
 def execute_command(command):
 	#This function decides what the user wants to do
-
 	if 0 == len(command):
 		return
-
 	if command[0] == "go":
 		if len(command) > 1:
 			execute_go(command[1])
