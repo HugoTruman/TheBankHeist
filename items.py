@@ -7,6 +7,7 @@ item_id = {
         """This card contains the details of one of the bank manages. Jing Wu. it has clearence to the break room""",
 
     "mass": 0.1,
+    "use":"You use this to get in the vault door room."
 }
 
 item_password = {
@@ -17,6 +18,7 @@ item_password = {
     "description":
         "This sheet of paper contains the password for the security computers.",
     "mass": 2.5,
+    "use":"You use this to get in the security room"
 }
 
 item_money = {
@@ -38,6 +40,7 @@ item_tape = {
     "description":
         "An empty tape taken from the security system.",
     "mass": 0.3,
+    "discrete":-40,
 }
 
 item_pistol = {
@@ -50,9 +53,9 @@ item_pistol = {
     "mass":1.0,
     "value":20,
     "discrete":20,
-    "use":{"Front Desk":"You fire the pistol in the air. Everyone starts screaming "
+    "use":"You fire the pistol in the air. Everyone starts screaming "
                         "and jumps to the ground. You demand that all the tells do "
-                        "the same and don't press the silent alarm."}
+                        "the same and don't press the silent alarm."
 }
 
 item_shotgun = {
@@ -66,9 +69,9 @@ item_shotgun = {
     "mass": 3.5,
     "value":40,
     "discrete":40,
-    "use":{"Front Desk":"You fire the shotgun in the air. Everyone starts screaming "
+    "use":"You fire the shotgun in the air. Everyone starts screaming "
                         "and jumps to the ground. You demand that all the tells do "
-                        "the same and don't press the silent alarm."}
+                        "the same and don't press the silent alarm."
 }
 
 item_grenade = {
@@ -82,10 +85,10 @@ item_grenade = {
     "mass":0.5,
     "value":15,
     "discrete":50,
-    "use":{"Front Desk":"You pull out the grenade. No one notices. You then yell that "
+    "use":"You pull out the grenade. No one notices. You then yell that "
                         "you have a grenade. you get a blank look from the customer. "
                         "You pull the pin and people scream and jump to the ground."
-                        "You throw the grenade in a big and it blows up."}
+                        "You throw the grenade in a big and it blows up."
 }
 
 item_smoke = {
@@ -99,8 +102,8 @@ item_smoke = {
     "mass":0.6,
     "value":10,
     "discrete":-10,
-    "use":{"Front Desk":"You throw the smoke grenade on the floor. A cloud of smoke apperas."
-                        "It masks you so no one knows who you are."}
+    "use":"You throw the smoke grenade on the floor. A cloud of smoke apperas."
+                        "It masks you so no one knows who you are."
 }
 
 item_smg = {
@@ -113,9 +116,9 @@ item_smg = {
     "mass":4,
     "value":35,
     "discrete":35,
-    "use":{"Front Desk":"You fire the SMG in the air. Everyone starts screaming "
+    "use":"You fire the SMG in the air. Everyone starts screaming "
                         "and jumps to the ground. You demand that all the tells do "
-                        "the same and don't press the silent alarm."}
+                        "the same and don't press the silent alarm."
 }
 
 item_rpg= {
@@ -128,9 +131,9 @@ item_rpg= {
     "mass":5,
     "value":50,
     "discrete":60,
-    "use":{"Front Desk":"You wave the RPG in the air. Everyone starts screaming "
+    "use":"You wave the RPG in the air. Everyone starts screaming "
                         "and jumps to the ground. You politely that all the tells do "
-                        "the same and don't press the silent alarm."}
+                        "the same and don't press the silent alarm."
 }
 
 item_pigmask = {
@@ -144,8 +147,8 @@ item_pigmask = {
     "mass":0.5,
     "value":7,
     "discrete":-25,
-    "use":{"Van":"You put on the musk. No one will know who you are. They will just "
-                 "be confused a pig is robbing a bank."}
+    "use":"You put on the musk. No one will know who you are. They will just "
+                 "be confused a pig is robbing a bank."
 }
 
 item_kirillmask = {
@@ -159,8 +162,8 @@ item_kirillmask = {
     "mass":.5,
     "value":15,
     "discrete":-40,
-    "use":{"Van":"You put on the musk. No one will know who you are. They will just "
-                 "be confused why is Kirill robbing a bank."}
+    "use":"You put on the musk. No one will know who you are. They will just "
+                 "be confused why is Kirill robbing a bank."
 }
 
 item_clownmask = {
@@ -174,8 +177,8 @@ item_clownmask = {
     "mass":0.5,
     "value":7,
     "discrete":-20,
-    "use":{"Van":"You put on the musk. No one will know who you are. They will just "
-                 "be confused a clown is robbing a bank."}
+    "use":"You put on the musk. No one will know who you are. They will just "
+                 "be confused a clown is robbing a bank."
 }
 
 item_boilersuit = {
@@ -188,8 +191,8 @@ item_boilersuit = {
     "mass":1,
     "value":15,
     "discrete":-10,
-    "use":{"van":"You put on the Suit. You think no one will know who you are "
-                 "just the banks plumber."}
+    "use":"You put on the Suit. You think no one will know who you are "
+                 "just the banks plumber."
 }
 
 item_ghostbusters = {
@@ -203,9 +206,9 @@ item_ghostbusters = {
     "mass":1.5,
     "value":30,
     "discrete":-20,
-    "use":{"Van":"You put on the Suit. You think no one will know who you are "
+    "use":"You put on the Suit. You think no one will know who you are "
                  "just the banks on site ghost buster. You cant help but sing "
-                 "the song in your head."}
+                 "the song in your head."
 }
 
 item_backpack = {
@@ -218,10 +221,10 @@ item_backpack = {
     "mass":-60,
     "value":20,
     "discrete":0,
-    "use":{"":"You put on the back pack and feel like you are back at uni. "
+    "use":"You put on the back pack and feel like you are back at uni. "
               "You start to have PTSD about being back but wears off after "
               "a few hours when you start thinking about all the stuff you"
-              "can fit in there."}
+              "can fit in there."
 }
 
 item_sportsbag = {
@@ -234,8 +237,8 @@ item_sportsbag = {
     "mass":-120,
     "value":50,
     "discrete":1,
-    "use":{"":"You put on the back pack and instantly feel like you can "
-              "carry more stuff. Strange."}
+    "use":"You put on the back pack and instantly feel like you can "
+              "carry more stuff. Strange."
 }
 
 item_fakegun = {
@@ -248,10 +251,10 @@ item_fakegun = {
     "mass":0.5,
     "value":5,
     "discrete":10,
-    "use":{"Front Desk":"You Pull out the gun. Every one screams and crys "
+    "use":"You Pull out the gun. Every one screams and crys "
                         "and drops to the ground as quick as possible. The "
                         "Bank tellers move out from behind the glass. this"
-                        "seemed to work better than the real thing."}
+                        "seemed to work better than the real thing."
 }
 
 item_twizzler = {
@@ -276,8 +279,8 @@ item_C4 = {
     "mass":3,
     "value":30,
     "discrete":40,
-    "use":{"Vault":"You push the C4 to the Vault door. You get a safe distance and BOOM!"
-                   "the door blows wide open."}
+    "use":"You push the C4 to the Vault door. You get a safe distance and BOOM!"
+                   "the door blows wide open."
 }
 
 item_cartoonbomb = {
@@ -316,8 +319,8 @@ item_drill = {
     "mass":2,
     "value":25,
     "discrete":20,
-    "use":{"The Vault":"You use the drill to break the locks to the vault. "
-                       "It makes quite a bit of noise."}
+    "use":"You use the drill to break the locks to the vault. "
+                       "It makes quite a bit of noise."
 }
 
 item_whiteoveralls = {
@@ -330,8 +333,8 @@ item_whiteoveralls = {
     "mass":0.5,
     "value":5,
     "discrete":3,
-    "use":{"Van":"You put on the Suit. You think no one will know who you are "
-                 "just the banks painter. But you are not wearing a mask."}
+    "use":"You put on the Suit. You think no one will know who you are "
+                 "just the banks painter. But you are not wearing a mask."
 }
 
 
@@ -346,9 +349,9 @@ item_axe = {
     "mass":5,
     "value":10,
     "discrete":30,
-    "use":{"Front Desk":"You pull this out and everyone gives you a worried look and"
+    "use":"You pull this out and everyone gives you a worried look and"
                    " slowly gets to the ground. You yell this is a bank heist. You "
-                   "then think it was quite obvious."}
+                   "then think it was quite obvious."
 }
 
 item_stethoscopese = {
@@ -361,13 +364,13 @@ item_stethoscopese = {
     "mass":0.4,
     "value":15,
     "discrete":1,
-    "use":{"Vault":"You put on the stethoscope and place it on the vault door. you"
+    "use":"You put on the stethoscope and place it on the vault door. you"
                    "try different codes and you hear click...."
                    "click...."
                    "click..."
-                   "You are in, It was quite easy."}
+                   "You are in, It was quite easy."
 }
-items = {
+all_items = {
     "id": item_id,
     "password": item_password,
     "money": item_money,
