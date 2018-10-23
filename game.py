@@ -1,7 +1,7 @@
 from map_and_items import *
 from player import *
 from gameParser import *
-
+import os
 def list_of_items(items):
 	#Function to print a list of items as a string from a list
 	list_of_items = []
@@ -208,13 +208,33 @@ def move(exits, direction):
 def main(rooms):
 
 	# Main game loop
-	print(
-"""
-THE BANK HEIST
-Robber: David Goldfarb
-Bank: East Hollywood Financial Centre
-"""
-		)
+	os.system('cls')
+	print("""
+					=========================================================================================================================                                                                                                                     
+					__________ ___                      ________                     ___             ____    ____                            
+					MMMMMMMMMM `MM                      `MMMMMMMb.                   `MM             `MM'    `MM'        68b                 
+					    MM      MM                       MM    `Mb                    MM              MM      MM         Y89                
+					    MM      MM  __     ____          MM     MM    ___   ___  __   MM   __         MM      MM   ____  ___   ____   M     
+					    MM      MM 6MMb   6MMMMb         MM    .M9  6MMMMb  `MM 6MMb  MM   d'         MM      MM  6MMMMb `MM  6MMMMb  MMMMM  
+					    MM      MMM9 `Mb 6M'  `Mb        MMMMMMM(  8M'  `Mb  MMM9 `Mb MM  d'          MMMMMMMMMM 6M'  `Mb MM MM'    ` MM     
+					    MM      MM'   MM MM    MM        MM    `Mb     ,oMM  MM'   MM MM d'           MM      MM MM    MM MM YM.      MM     
+					    MM      MM    MM MMMMMMMM        MM     MM ,6MM9'MM  MM    MM MMdM.           MM      MM MMMMMMMM MM  YMMMMb  MM     
+					    MM      MM    MM MM              MM     MM MM'   MM  MM    MM MMPYM.          MM      MM MM       MM      `Mb MM     
+					    MM      MM    MM YM    d9        MM    .M9 MM.  ,MM  MM    MM MM  YM.         MM      MM YM    d9 MM L    ,MM YM.  , 
+					   _MM_    _MM_  _MM_ YMMMM9        _MMMMMMM9' `YMMM9'Yb_MM_  _MM_MM_  YM._      _MM_    _MM_ YMMMM9 _MM_MYMMMM9   YMMM9 
+					                                                                                                                         
+					=========================================================================================================================
+		""")
+	print("""
+	    _      ___                  _           _____                 ___ _ 
+	   /_\    / __|__ _ _ __  ___  | |__ _  _  |_   _|__ __ _ _ __   |_  ) |
+	  / _ \  | (_ / _` | '  \/ -_) | '_ \ || |   | |/ -_) _` | '  \   / /| |
+	 /_/ \_\  \___\__,_|_|_|_\___| |_.__/\_, |   |_|\___\__,_|_|_|_| /___|_|
+	                                     |__/                                                                                  
+		""")
+	print("\nYou are David Goldfarb, the world's most elusive bank robber.")
+	print("Your mission, if you choose to accept it, is to rob the East Hollywood Financial Center.")
+
 	while True:
 		# Display game status (room description, inventory etc.)
 		print_room(current_room)
