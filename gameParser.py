@@ -1,7 +1,12 @@
 import string
 
 #Define a list of words not to remove from input
-important_words = ["go","north","east","south","west","take","rpg"]
+important_words = ["go","take","buy",
+				"north","east","south","west",
+				"rpg","id","password","money","tape","pistol","shotgun","grenade","smoke bomb", "smg",
+				"kirill mask", "clown mask", "boiler suit", "ghost buster suit", "back pack", "sports bag",
+				"fake gun", "twizzler", "C4", "cartoon bomb", "sparkler", "drill", "white overalls", "axe", "stethoscopes"
+				]
 
 def filter_words(words):
 	#This function removes the unimportant words from a string
