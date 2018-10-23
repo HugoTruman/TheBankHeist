@@ -7,6 +7,7 @@ item_id = {
         """This card contains the details of one of the bank manages. Jing Wu. it has clearence to the break room""",
 
     "mass": 0.1,
+    "value":0,
     "use":"You use this to get in the vault door room."
 }
 
@@ -18,6 +19,7 @@ item_password = {
     "description":
         "This sheet of paper contains the password for the security computers.",
     "mass": 2.5,
+    "value":0,
     "use":"You use this to get in the security room"
 }
 
@@ -29,6 +31,7 @@ item_money = {
     "description":
         "This mountain of cash is almost enough to pay off your student debt.",
     "mass": 0.3,
+    "value":0,
 
 }
 
@@ -40,6 +43,7 @@ item_tape = {
     "description":
         "An empty tape taken from the security system.",
     "mass": 0.3,
+    "value":0,
     "discrete":-40,
 }
 
