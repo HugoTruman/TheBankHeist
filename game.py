@@ -118,7 +118,25 @@ def execute_drop(item_id):
 
 def execute_buy(item_id):
 	#This 
-	
+	global current_room
+	if item_id not in current_room["items"]:
+		print("You cannot buy that.")
+	else:
+		cur_item = all_items[item_id]
+		if cur_item not in current_room["items"]:
+			print("You cannot take that")
+		else:
+			if sum_carry_items_weight() + cur_item["mass"] > 3:
+				print("You cannot carry more than 3KG, you are currently carrying " + str(sum_carry_items_weight()) + "KG")
+			else:
+				if cur_item["value"] > money:
+					print("You cannot afford that, it costs $" + str(cur_item["value"]))
+				else:
+					inventory.append(cur_item)
+					current_room["items"].remove(cur_item)
+					print("\nYou bought " + cur_item["name"] + "for $" + str(cur_item["value."]))
+					money = money - cur_item["value"]
+					print("You have $" + str(money) + "left.")
 
 def execute_command(command):
 	#This function decides what the user wants to do

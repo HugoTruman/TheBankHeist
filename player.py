@@ -7,3 +7,5 @@ inventory = []
 current_room = rooms["Van"]
 
 current_carry_mass = 0
+
+money = 1000
