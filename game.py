@@ -55,7 +55,10 @@ def print_menu(exits, room_items, inv_items):
 		else:
 			print('TAKE ' + items['id'].upper() + ' to take ' + items['name'] + '.')
 	for items in inv_items:
-		print('DROP ' + items['id'].upper() + ' to drop your ' + items['name'] + '.')    
+		print('DROP ' + items['id'].upper() + ' to drop your ' + items['name'] + '.')
+	for items in inv_items:
+		if items in current_room['uses']:
+			print('USE ' + items['id'].upper() + ' to use ' + items['name'] + '.')  
 	print("What do you want to do?")
 
 def is_valid_exit(exits, chosen_exit):
@@ -70,6 +73,7 @@ def sum_carry_items_weight():
 	return total
 
 def execute_use(item_id):
+
 
 
 def execute_go(direction):
@@ -120,10 +124,7 @@ def execute_drop(item_id):
 			current_room['items'].append(cur_item)
 			inventory.remove(cur_item)
 
-<<<<<<< HEAD
-"""
-=======
->>>>>>> 94f5d16262c027d0164fdf4eca6aeafff7a5f742
+
 def execute_buy(item_id):
 	#This 
 	global current_room
@@ -145,7 +146,7 @@ def execute_buy(item_id):
 					print("\nYou bought " + cur_item["name"] + "for $" + str(cur_item["value."]))
 					money = money - cur_item["value"]
 					print("You have $" + str(money) + "left.")
-"""
+
 
 def execute_command(command):
 	#This function decides what the user wants to do
