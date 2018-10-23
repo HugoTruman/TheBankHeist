@@ -89,7 +89,7 @@ def execute_take(item_id):
 		if cur_item not in current_room['items']:
 			print("You cannot take that.")
 		else:
-			if sum_carry_items_weight() + cur_item['mass'] > 3:
+			if sum_carry_items_weight() + cur_item['mass'] > 9000000:
 				print('You cannot carry more than 3KG, you are currently carrying ' + str(sum_carry_items_weight()) + 'KG')
 			else:
 				inventory.append(cur_item)
@@ -116,7 +116,8 @@ def execute_drop(item_id):
 			current_room['items'].append(cur_item)
 			inventory.remove(cur_item)
 
-#def execute_buy(item_id):
+"""
+def execute_buy(item_id):
 	#This 
 	global current_room
 	if item_id not in current_room["items"]:
@@ -137,6 +138,7 @@ def execute_drop(item_id):
 					print("\nYou bought " + cur_item["name"] + "for $" + str(cur_item["value."]))
 					money = money - cur_item["value"]
 					print("You have $" + str(money) + "left.")
+"""
 
 def execute_command(command):
 	#This function decides what the user wants to do
@@ -173,7 +175,7 @@ def menu(exits, room_items, inv_items):
 
 	# Normalise the input
 	normalised_user_input = normalise_input(user_input)
-
+	print(normalised_user_input)
 	return normalised_user_input
 
 
