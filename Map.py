@@ -8,9 +8,11 @@ room_foyer = {
     No one can see you, you are in a blind spot. No one has 
     no idea what is about to happen.""",
 
-    "exits": {"north": "Front Desk"},
+    "exits": {"north": "Front Desk","south":"Van"},
 
-    "items": []
+    "items": [],
+
+    "uses": [item_pigmask, item_kirillmask]
 }
 
 room_front_desk = {
@@ -25,7 +27,9 @@ room_front_desk = {
 
     "exits":  {"north": "Vault", "east": "Break Room", "south":"Foyer", "west":"Security Room" },
 
-    "items": [item_id]
+    "items": [item_id],
+
+    "uses": []
 }
 
 room_vault_door = {
@@ -87,7 +91,7 @@ room_van = {
         """You are in your van which is also your getaway vechial. 
         You now start to regret your choice since its just you""",
 
-    "exits": {"west": "Gun Store", "east":"Fireworks Store"},
+    "exits": {"west": "Gun Store", "east":"Fireworks Store", "north":"Foyer"},
 
     "items": []
 
