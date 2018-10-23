@@ -116,7 +116,10 @@ def execute_drop(item_id):
 			current_room['items'].append(cur_item)
 			inventory.remove(cur_item)
 
+<<<<<<< HEAD
 """
+=======
+>>>>>>> 94f5d16262c027d0164fdf4eca6aeafff7a5f742
 def execute_buy(item_id):
 	#This 
 	global current_room

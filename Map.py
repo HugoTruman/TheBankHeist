@@ -12,7 +12,7 @@ room_foyer = {
 
     "items": [],
 
-    "uses": [item_pigmask, item_kirillmask]
+    "uses": [item_pigmask, item_kirillmask, item_clownmask, item_boilersuit, item_ghostbusters, item_whiteoveralls]
 }
 
 room_front_desk = {
@@ -29,7 +29,9 @@ room_front_desk = {
 
     "items": [item_id],
 
-    "uses": []
+    "uses": [item_pigmask, item_kirillmask, item_clownmask, item_boilersuit, item_ghostbusters, item_whiteoveralls,
+             item_pistol, item_shotgun, item_grenade, item_smoke, item_smg, item_rpg, item_fakegun, item_axe,
+             item_id, item_password]
 }
 
 room_vault_door = {
@@ -42,6 +44,9 @@ room_vault_door = {
     "exits": {"south": "Front Desk", "north":"Vault"},
 
     "items":[],
+
+    "uses": [item_pigmask, item_kirillmask, item_clownmask, item_boilersuit, item_ghostbusters, item_whiteoveralls,
+             item_C4, item_drill, item_stethoscopese]
 }
 
 
@@ -54,7 +59,9 @@ room_vault = {
 
     "exits": {"south": "Vault Door"},
 
-    "items": [item_money]
+    "items": [item_money],
+
+    "uses": [item_pigmask, item_kirillmask, item_clownmask, item_boilersuit, item_ghostbusters, item_whiteoveralls]
 }
 
 room_security = {
@@ -68,7 +75,9 @@ room_security = {
 
     "exits": {"east": "Front Desk"},
 
-    "items": [item_tape]
+    "items": [item_tape],
+
+    "uses": [item_pigmask, item_kirillmask, item_clownmask, item_boilersuit, item_ghostbusters, item_whiteoveralls]
 }
 
 room_break = {
@@ -81,7 +90,9 @@ room_break = {
 
     "exits": {"west": "Front Desk"},
 
-    "items": [item_password]
+    "items": [item_password],
+
+    "uses": [item_pigmask, item_kirillmask, item_clownmask, item_boilersuit, item_ghostbusters, item_whiteoveralls]
 }
 
 room_van = {
@@ -93,7 +104,9 @@ room_van = {
 
     "exits": {"west": "Gun Store", "east":"Fireworks Store", "north":"Foyer"},
 
-    "items": []
+    "items": [],
+
+    "uses": [item_pigmask, item_kirillmask, item_clownmask, item_boilersuit, item_ghostbusters, item_whiteoveralls]
 
 }
 
