@@ -50,7 +50,10 @@ def print_menu(exits, room_items, inv_items):
 	for direction in exits:
 		print_exit(direction, exit_leads_to(exits, direction))
 	for items in room_items:
-		print('TAKE ' + items['id'].upper() + ' to take ' + items['name'] + '.')
+		if items['value'] > 0:
+			print('BUY ' + items['id'].upper() + ' to purchase ' + items['name'] + ' for $' + str(items['value'])+'.')
+		else:
+			print('TAKE ' + items['id'].upper() + ' to take ' + items['name'] + '.')
 	for items in inv_items:
 		print('DROP ' + items['id'].upper() + ' to drop your ' + items['name'] + '.')    
 	print("What do you want to do?")
@@ -66,6 +69,7 @@ def sum_carry_items_weight():
 		total += x['mass']
 	return total
 
+def execute_use(item_id):
 
 
 def execute_go(direction):
@@ -164,6 +168,16 @@ def execute_command(command):
 			execute_drop(command[1])
 		else:
 			print("Drop what?")
+	elif command[0] == "buy":
+		if len(command) > 1:
+			execute_buy(command[1])
+		else:
+			print("Buy what?")
+	elif command[0] == "use":
+		if len(command) > 1:
+			execute_use(command[1])
+		else:
+			print("Use what?")
 
 	else:
 		print("This makes no sense.")
@@ -193,6 +207,8 @@ def main(rooms):
 	print(
 """
 THE BANK HEIST
+Robber: David Goldfarb
+Bank: East Hollywood Financial Centre
 """
 		)
 	while True:
