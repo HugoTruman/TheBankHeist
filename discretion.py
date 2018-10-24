@@ -7,9 +7,8 @@ else:
     pass
 
 
-def detection(items):
+def detection(items, inventory):
     detection = -200
-    inventory = ["grenade","smoke bomb","smg","rpg","pig mask","clown mask","boiler suit","ghost buster suit"]
     
     for x,a in items.items():
         if x not in inventory:
