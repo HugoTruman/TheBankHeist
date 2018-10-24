@@ -254,7 +254,7 @@ def workout_winnings():
 def main(rooms):
 	global discrete
 	global inventory
-	lethal = []
+	lethal = [item_pistol, item_shotgun, item_smg, item_rpg]
 
 	# Main game loop
 	os.system('cls')
