@@ -9,7 +9,7 @@ item_id = {
     "mass": 0.1,
     "value":0,
     "use":"You use this to get in the vault door room.",
-    
+    'type': 'entry'
 }
 
 item_password = {
@@ -22,6 +22,7 @@ item_password = {
     "mass": 2.5,
     "value":0,
     "use":"You use this to get in the security room",
+    'type': 'entry'
     
 }
 
@@ -62,6 +63,7 @@ item_pistol = {
     "use":"You fire the pistol in the air. Everyone starts screaming "
                         "and jumps to the ground. You demand that all the tells do "
                         "the same and don't press the silent alarm.",
+    'type': 'entry'
     
 }
 
@@ -79,6 +81,7 @@ item_shotgun = {
     "use":"You fire the shotgun in the air. Everyone starts screaming "
                         "and jumps to the ground. You demand that all the tells do "
                         "the same and don't press the silent alarm.",
+    'type': 'entry'
     
 }
 
@@ -97,6 +100,7 @@ item_grenade = {
                         "you have a grenade. you get a blank look from the customer. "
                         "You pull the pin and people scream and jump to the ground."
                         "You throw the grenade in a big and it blows up.",
+    'type': 'entry'
     
 }
 
@@ -113,6 +117,7 @@ item_smoke = {
     "discrete":-10,
     "use":"You throw the smoke grenade on the floor. A cloud of smoke apperas."
                         "It masks you so no one knows who you are.",
+    'type': 'entry'
     
 }
 
@@ -129,6 +134,7 @@ item_smg = {
     "use":"You fire the SMG in the air. Everyone starts screaming "
                         "and jumps to the ground. You demand that all the tells do "
                         "the same and don't press the silent alarm.",
+    'type': 'entry'
     
 }
 
@@ -145,6 +151,7 @@ item_rpg= {
     "use":"You wave the RPG in the air. Everyone starts screaming "
                         "and jumps to the ground. You politely that all the tells do "
                         "the same and don't press the silent alarm.",
+    'type': 'entry'
     
 }
 
@@ -267,6 +274,7 @@ item_fakegun = {
                         "and drops to the ground as quick as possible. The "
                         "Bank tellers move out from behind the glass. this"
                         "seemed to work better than the real thing.",
+    'type': 'entry'
     
 }
 
@@ -294,6 +302,7 @@ item_C4 = {
     "discrete":40,
     "use":"You push the C4 to the Vault door. You get a safe distance and BOOM!"
                    "the door blows wide open.",
+    'type': 'entry'
     
 }
 
@@ -335,6 +344,7 @@ item_drill = {
     "discrete":20,
     "use":"You use the drill to break the locks to the vault. "
                        "It makes quite a bit of noise.",
+    'type': 'entry'
     
 }
 
@@ -367,6 +377,7 @@ item_axe = {
     "use":"You pull this out and everyone gives you a worried look and"
                    " slowly gets to the ground. You yell this is a bank heist. You "
                    "then think it was quite obvious.",
+    'type': 'entry'
     
 }
 
@@ -385,6 +396,7 @@ item_stethoscopese = {
                    "click...."
                    "click..."
                    "You are in, It was quite easy.",
+    'type': 'entry'
     
 }
 all_items = {

@@ -25,7 +25,7 @@ room_front_desk = {
     all the other rooms to the bank, who ever designed this bank 
     should probably be fired""",
 
-    "exits":  {"north": "Vault", "east": "Break Room", "south":"Foyer", "west":"Security Room" },
+    "exits":  {"north": "Vault Door", "east": "Break Room", "south":"Foyer", "west":"Security Room" },
 
     "items": [all_items["id"]],
 
