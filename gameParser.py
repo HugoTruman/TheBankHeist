@@ -5,7 +5,7 @@ important_words = ["go","take","buy", "use",
 				"north","east","south","west",
 				"rpg","id","password","money","tape","pistol","shotgun","grenade","smoke bomb", "smg", 'pig',
 				"kirill", "clown", "boiler", "ghost", "back", "sports",
-				"fake", "twizzler", "C4", "cartoon bomb", "sparkler", "drill", "white overalls", "axe", "stethoscopes"
+				"fake", "twizzler", "c4", "cartoon", "sparkler", "drill", "white", "axe", "stethoscopes"
 				]
 
 def filter_words(words):

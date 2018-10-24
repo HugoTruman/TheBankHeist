@@ -74,7 +74,7 @@ room_vault_door = {
     "items":[],
 
     "uses": [all_items['pig'], all_items["kirill"], all_items["clown"], all_items["boiler"], all_items["ghost"], all_items["white"],
-             all_items["C4"], all_items["drill"], all_items["stethoscopes"]]
+             all_items["c4"], all_items["drill"], all_items["stethoscopes"]]
 }
 
 
@@ -183,7 +183,7 @@ room_firework = {
     'locked exits': {},
     'unlocking tool' : [],
 
-    "items": [all_items["sparkler"], all_items["cartoon"], all_items["C4"], all_items["twizzler"]],
+    "items": [all_items["sparkler"], all_items["cartoon"], all_items["c4"], all_items["twizzler"]],
 
     'uses': []
 

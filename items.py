@@ -8,6 +8,7 @@ item_id = {
 
     "mass": 0.1,
     "value":0,
+    'discrete':0,
     "use":"You use this to get in the vault door room.",
     'type': 'entry'
 }
@@ -20,6 +21,7 @@ item_password = {
     "description":
         "This sheet of paper contains the password for the security computers.",
     "mass": 2.5,
+    'discrete':0,
     "value":0,
     "use":"You use this to get in the security room",
     'type': 'entry'
@@ -34,6 +36,7 @@ item_money = {
     "description":
         "This mountain of cash is almost enough to pay off your student debt.",
     "mass": 0.3,
+    'discrete':0,
     "value":0,
     'type':'money'
 
@@ -434,7 +437,7 @@ all_items = {
     "sports":item_sportsbag,
     "fake":item_fakegun,
     "twizzler":item_twizzler,
-    "C4":item_C4,
+    "c4":item_C4,
     "cartoon":item_cartoonbomb,
     "sparkler":item_sparkler,
     "drill":item_drill,

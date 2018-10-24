@@ -163,8 +163,12 @@ def execute_buy(item_id):
 		if cur_item not in current_room["items"]:
 			print("You cannot take that")
 		else:
-			if sum_carry_items_weight() + cur_item["mass"] > 3:
-				print("You cannot carry more than 3KG, you are currently carrying " + str(sum_carry_items_weight()) + "KG")
+			if sum_carry_items_weight() + cur_item['mass'] > 10:
+					print(
+						'''You cannot carry more than 10KG by yourself, consider buying a bag or something. If you already have one, ease up on the buying stuff,
+						your robbing a bank not going on holiday, Jesus!
+						'''
+						)
 			else:
 				if cur_item["value"] > money:
 					print("You cannot afford that, it costs $" + str(cur_item["value"]))
