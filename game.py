@@ -1,4 +1,6 @@
-from map_and_items import *
+from Map import *
+from items import *
+#from items_entry import *
 from player import *
 from gameParser import *
 import os
@@ -131,7 +133,8 @@ def execute_drop(item_id):
 def execute_buy(item_id):
 	#This 
 	global current_room
-	if item_id not in current_room["items"]:
+	global money
+	if item_id not in all_items:
 		print("You cannot buy that.")
 	else:
 		cur_item = all_items[item_id]
@@ -146,7 +149,7 @@ def execute_buy(item_id):
 				else:
 					inventory.append(cur_item)
 					current_room["items"].remove(cur_item)
-					print("\nYou bought " + cur_item["name"] + "for $" + str(cur_item["value."]))
+					print("\nYou bought " + cur_item["name"] + "for $" + str(cur_item["value"]))
 					money = money - cur_item["value"]
 					print("You have $" + str(money) + "left.")
 

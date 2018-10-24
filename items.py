@@ -1,5 +1,3 @@
-from Map import *
-
 item_id = {
     "id": "id",
 
@@ -11,7 +9,7 @@ item_id = {
     "mass": 0.1,
     "value":0,
     "use":"You use this to get in the vault door room.",
-    "opens": rooms['Vault']
+    
 }
 
 item_password = {
@@ -24,7 +22,7 @@ item_password = {
     "mass": 2.5,
     "value":0,
     "use":"You use this to get in the security room",
-    "opens": rooms["Security Room"]
+    
 }
 
 item_money = {
@@ -64,7 +62,7 @@ item_pistol = {
     "use":"You fire the pistol in the air. Everyone starts screaming "
                         "and jumps to the ground. You demand that all the tells do "
                         "the same and don't press the silent alarm.",
-    "opens": rooms["Break Room"]
+    
 }
 
 item_shotgun = {
@@ -81,7 +79,7 @@ item_shotgun = {
     "use":"You fire the shotgun in the air. Everyone starts screaming "
                         "and jumps to the ground. You demand that all the tells do "
                         "the same and don't press the silent alarm.",
-    "opens":rooms["Break Room"]
+    
 }
 
 item_grenade = {
@@ -99,7 +97,7 @@ item_grenade = {
                         "you have a grenade. you get a blank look from the customer. "
                         "You pull the pin and people scream and jump to the ground."
                         "You throw the grenade in a big and it blows up.",
-    "opens":rooms["Break Room"]
+    
 }
 
 item_smoke = {
@@ -115,7 +113,7 @@ item_smoke = {
     "discrete":-10,
     "use":"You throw the smoke grenade on the floor. A cloud of smoke apperas."
                         "It masks you so no one knows who you are.",
-    "opens":rooms["Break Room"]
+    
 }
 
 item_smg = {
@@ -131,7 +129,7 @@ item_smg = {
     "use":"You fire the SMG in the air. Everyone starts screaming "
                         "and jumps to the ground. You demand that all the tells do "
                         "the same and don't press the silent alarm.",
-    "opens":rooms["Break Room"]
+    
 }
 
 item_rpg= {
@@ -147,7 +145,7 @@ item_rpg= {
     "use":"You wave the RPG in the air. Everyone starts screaming "
                         "and jumps to the ground. You politely that all the tells do "
                         "the same and don't press the silent alarm.",
-    "opens":rooms["Break Room"]
+    
 }
 
 item_pigmask = {
@@ -269,7 +267,7 @@ item_fakegun = {
                         "and drops to the ground as quick as possible. The "
                         "Bank tellers move out from behind the glass. this"
                         "seemed to work better than the real thing.",
-    "opens":rooms["Break Room"]
+    
 }
 
 item_twizzler = {
@@ -296,7 +294,7 @@ item_C4 = {
     "discrete":40,
     "use":"You push the C4 to the Vault door. You get a safe distance and BOOM!"
                    "the door blows wide open.",
-    "opens":rooms["Vault"]
+    
 }
 
 item_cartoonbomb = {
@@ -337,7 +335,7 @@ item_drill = {
     "discrete":20,
     "use":"You use the drill to break the locks to the vault. "
                        "It makes quite a bit of noise.",
-    "opens":rooms["Vault"]
+    
 }
 
 item_whiteoveralls = {
@@ -369,7 +367,7 @@ item_axe = {
     "use":"You pull this out and everyone gives you a worried look and"
                    " slowly gets to the ground. You yell this is a bank heist. You "
                    "then think it was quite obvious.",
-    "opens":rooms["Break Room"]
+    
 }
 
 item_stethoscopese = {
@@ -387,7 +385,7 @@ item_stethoscopese = {
                    "click...."
                    "click..."
                    "You are in, It was quite easy.",
-    "opens":rooms["Vault"]
+    
 }
 all_items = {
     "id": item_id,

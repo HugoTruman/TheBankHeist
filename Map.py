@@ -1,4 +1,4 @@
-from items import *
+from items import all_items
 
 room_foyer = {
     "name": "Foyer",
@@ -120,7 +120,9 @@ room_gun = {
 
     "exits": {"east": "Van", "west":"Hardware Store"},
 
-    "items": [all_items["pistol"], all_items["shotgun"], all_items["grenade"], all_items["smoke bomb"], all_items["smg"], all_items["rpg"]]
+    "items": [all_items["pistol"], all_items["shotgun"], all_items["grenade"], all_items["smoke bomb"], all_items["smg"], all_items["rpg"]],
+
+    'uses': []
 
 }
 
@@ -134,7 +136,9 @@ room_firework = {
 
     "exits": {"west": "Van", "east": "Costume Store"},
 
-    "items": [all_items["sparkler"], all_items["cartoon bomb"], all_items["C4"], all_items["twizzler"]]
+    "items": [all_items["sparkler"], all_items["cartoon bomb"], all_items["C4"], all_items["twizzler"]],
+
+    'uses': []
 
 }
 
@@ -149,7 +153,9 @@ room_costume = {
 
     "exits": {"east": "Fireworks Store"},
 
-    "items": [all_items['pig mask'], all_items["kirill mask"], all_items["clown mask"], all_items["boiler suit"], all_items["ghost buster suit"], all_items["back pack"], all_items["sports bag"], all_items["fake gun"]]
+    "items": [all_items['pig mask'], all_items["kirill mask"], all_items["clown mask"], all_items["boiler suit"], all_items["ghost buster suit"], all_items["back pack"], all_items["sports bag"], all_items["fake gun"]],
+
+    'uses': []
 
 }
 room_hardware = {
@@ -161,7 +167,9 @@ room_hardware = {
 
     "exits": {"east": "Gun Store"},
 
-    "items": [all_items["drill"], all_items["white overalls"], all_items["axe"], all_items["stethoscopes"]]
+    "items": [all_items["drill"], all_items["white overalls"], all_items["axe"], all_items["stethoscopes"]],
+
+    'uses': []
 
 }
 
