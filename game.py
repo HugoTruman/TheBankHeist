@@ -3,6 +3,7 @@ from items import *
 #from items_entry import *
 from player import *
 from gameParser import *
+from Endings import *
 import os
 def list_of_items(items):
 	#Function to print a list of items as a string from a list
@@ -87,6 +88,7 @@ def execute_use(item_id):
 		if all_items[item_id]['type'] == 'entry':
 			print (all_items[item_id]['use'])
 			discrete += all_items[item_id]['discrete']
+			current_room['description'] = current_room['new description']
 			current_room['exits'] = merge_two_dicts(current_room['exits'],current_room['locked exits'])
 		elif all_items[item_id]['type'] == 'clothes':
 			print (all_items[item_id]['use'])
@@ -110,6 +112,7 @@ def execute_go(direction):
 def execute_take(item_id):
 	#This function executes a take command to pick up an item.
 	global current_room
+	global discrete
 	if item_id not in all_items:
 		print("You cannot take that.")
 	else:
@@ -136,6 +139,8 @@ def execute_take(item_id):
 					print()
 					print('ITEM MASS:  '+ str(cur_item['mass']))
 					print()
+					discrete += cur_item['discrete']
+
 	
 
 def execute_drop(item_id):
@@ -177,7 +182,12 @@ def execute_buy(item_id):
 					current_room["items"].remove(cur_item)
 					print("\nYou bought " + cur_item["name"] + "for $" + str(cur_item["value"]))
 					money = money - cur_item["value"]
+					print('ITEM DESCRIPTION: ' + cur_item['description'])
+					print()
+					print('ITEM MASS:  '+ str(cur_item['mass']))
+					print()
 					print("You have $" + str(money) + "left.")
+					print()
 
 
 def execute_command(command):
@@ -233,8 +243,18 @@ def move(exits, direction):
 	#Thsi function shows the next room to go to
 	return rooms[exits[direction]]
 
+def workout_winnings():
+	global inventory
+	total_mass = sum_carry_items_weight()
+	total_mass = -total_mass
+	total_mass += 10
+	grams_converted = total_mass * 1000
+	return grams_converted
 
 def main(rooms):
+	global discrete
+	global inventory
+	lethal = []
 
 	# Main game loop
 	os.system('cls')
@@ -265,13 +285,37 @@ def main(rooms):
 	print("Your mission, if you choose to accept it, is to rob the East Hollywood Financial Center.")
 
 	while True:
-		# Display game status (room description, inventory etc.)
-		print_room(current_room)
-		print_inventory_items(inventory)
+		if discrete > 50:
+			for items in inventory:
+				if items in lethal:
+					print(end_shot['name'].upper())
+					print()
+					print(end_shot['description'])
+					exit()
+			print(end_caught['name'].upper())
+			print()
+			print(end_caught['description'])
+			exit()
+		elif all_items['money'] in inventory and current_room == rooms['Van']:
+			if discrete > 20:
+				print(end_arrested['name'].upper())
+				print()
+				print(end_arrested['description'])
+				exit()
+			print(end_get_away_cash['name'].upper())
+			print()
+			print(end_get_away_cash['description'])
+			print()
+			print('You succesfully got away with $' + str(workout_winnings()) + ', well done!')
+			exit()
+		else:
+			# Display game status (room description, inventory etc.)
+			print_room(current_room)
+			print_inventory_items(inventory)
 
-		# Show the menu with possible actions and ask the player
-		command = menu(current_room["exits"], current_room["items"], inventory)
-		execute_command(command)
+			# Show the menu with possible actions and ask the player
+			command = menu(current_room["exits"], current_room["items"], inventory)
+			execute_command(command)
 
 
 

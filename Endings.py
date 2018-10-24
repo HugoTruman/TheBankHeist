@@ -17,9 +17,9 @@ end_get_away_cash={
                    "your student land"
 }
 
-end_get_away={
+end_arrested={
     "name": "Get Away",
-    "description": "You didn't get caught. But you also didn't get any money."
-                   "you basically just scared a few people for no reason."
-                   "Well done."
+    "description": "You didn't get caught during the act."
+                    "However you were far to noisy and obvious that the police worked out who you were."
+                    "Unlucky you win nothing."
 }

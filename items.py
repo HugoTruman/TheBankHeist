@@ -4,12 +4,12 @@ item_id = {
     "name": "id card",
 
     "description":
-        """This card contains the details of one of the bank manages. Jing Wu. it has clearence to the break room""",
+        """This card contains the details of one of the bank manages. Jing Wu. It has clearence to the vault room, lucky that.""",
 
     "mass": 0.1,
     "value":0,
     'discrete':0,
-    "use":"You use this to get in the vault door room.",
+    "use":"You use this to get in the vault room.",
     'type': 'entry'
 }
 

@@ -29,17 +29,20 @@ room_front_desk = {
     all the other rooms to the bank, who ever designed this bank 
     should probably be fired""",
 
+    'new description':
+    """Everyone is laying on the floor, keeping silent cause they have no idea 
+    what is going on and they are very scared of you""",
+
     "exits":  { "south":"Foyer"},
 
     'locked exits': {"north": "Vault Door", "east": "Break Room", "west":"Security Room" },
 
-    'unlocking tool': [item_pistol, item_shotgun, item_grenade, item_smoke, item_smg, item_rpg, item_fakegun, item_axe],
+    'unlocking tool': [],
 
-    "items": [all_items["id"]],
+    "items": [],
 
     "uses": [all_items['pig'], all_items["kirill"], all_items["clown"], all_items["boiler"], all_items["ghost"], all_items["white"],
-             all_items["pistol"], all_items["shotgun"], all_items["grenade"], all_items["smoke"], all_items["smg"], all_items["rpg"], all_items["fake"], all_items["axe"],
-             all_items["id"], all_items["password"]]
+             all_items["pistol"], all_items["shotgun"], all_items["grenade"], all_items["smoke"], all_items["smg"], all_items["rpg"], all_items["fake"], all_items["axe"], all_items["password"]]
 }
 
 room_cctv = {
@@ -65,6 +68,10 @@ room_vault_door = {
     """You go down a flight of stairs to the vault Door. You see a massive 
     vault door. You need to think of a way to get past.""",
 
+    'new description':
+    """Your stadning infront of an open door, the vault is just through it,
+    you begin to think this might actually work!""",
+
     "exits": {"south": "Front Desk"},
 
     'locked exits': {"north":"Vault"},
@@ -74,7 +81,7 @@ room_vault_door = {
     "items":[],
 
     "uses": [all_items['pig'], all_items["kirill"], all_items["clown"], all_items["boiler"], all_items["ghost"], all_items["white"],
-             all_items["c4"], all_items["drill"], all_items["stethoscopes"]]
+             all_items["c4"], all_items["drill"], all_items["stethoscopes"], all_items["id"]]
 }
 
 
@@ -100,19 +107,20 @@ room_security = {
     "name": "Security Room",
 
     "description":
-    """You find your self in a small dark room, lit by the 
-    glare of the security monitors. There is a tape player
-    and a pile of tapes. which makes you wonder who even 
-    uses tapes.""",
+    """You find your self in a small dark room, theres a door before you,
+    to the CCTV room, but it is password protected.""",
+
+    'new description': """You find your self in a small dark room, theres a door before you,
+    to the CCTV room, it is wide open cause you unlocked it""",
 
     "exits": {"east": "Front Desk"},
 
     'locked exits': {'west': 'CCTV Room'},
-    'unlocking tool' : [item_password],
+    'unlocking tool' : [],
 
-    "items": [all_items["tape"]],
+    "items": [all_items["id"]],
 
-    "uses": [all_items['pig'], all_items["kirill"], all_items["clown"], all_items["boiler"], all_items["ghost"], all_items["white"]]
+    "uses": [all_items['pig'], all_items["kirill"], all_items["clown"], all_items["boiler"], all_items["ghost"], all_items["white"], all_items['password']]
 }
 
 room_break = {
@@ -198,7 +206,7 @@ room_costume = {
         a costume. the place is just a pile of costumes, which are the
         perfect disguize for the job.""",
 
-    "exits": {"east": "Fireworks Store"},
+    "exits": {"west": "Fireworks Store"},
 
     'locked exits': {},
     'unlocking tool' : [],
