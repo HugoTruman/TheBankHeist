@@ -8,6 +8,6 @@ current_room = rooms["Van"]
 
 current_carry_mass = 0
 
-money = 50
+money = 100
 
 discrete = 0
