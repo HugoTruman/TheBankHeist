@@ -281,8 +281,9 @@ def main(rooms):
 	 /_/ \_\  \___\__,_|_|_|_\___| |_.__/\_, |   |_|\___\__,_|_|_|_| /___|_|
 	                                     |__/                                                                                  
 		""")
-	print("\nYou are David Goldfarb, the world's most elusive bank robber.")
-	print("Your mission, if you choose to accept it, is to rob the East Hollywood Financial Center.")
+	print("\nYou are a Student that is in debt to your student loan, you are sturrguling to make ends meet.")
+	print("\nYou decided to turn to your last resort. To Rob a bank to pay abck your loan.")
+	print("\nYour mission, if you choose to accept it, is to rob the East Hollywood Financial Center.")
 
 	while True:
 		if discrete > 50:
