@@ -15,7 +15,7 @@ end_caught={
 end_get_away_cash={
     "name": "Cash Get Away",
     "description": "Well done! You have gotten away. You can now pay back some of "
-                   "your student land"
+                   "your student loan"
 }
 
 end_arrested={
