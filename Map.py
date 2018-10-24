@@ -1,4 +1,4 @@
-from items import all_items
+from items import *
 
 room_foyer = {
     "name": "Foyer",
@@ -9,6 +9,10 @@ room_foyer = {
     no idea what is about to happen.""",
 
     "exits": {"north": "Front Desk","south":"Van"},
+
+    'locked exits': {},
+    'unlocking tool': [],
+
 
     "items": [],
 
@@ -25,13 +29,33 @@ room_front_desk = {
     all the other rooms to the bank, who ever designed this bank 
     should probably be fired""",
 
-    "exits":  {"north": "Vault Door", "east": "Break Room", "south":"Foyer", "west":"Security Room" },
+    "exits":  { "south":"Foyer"},
+
+    'locked exits': {"north": "Vault Door", "east": "Break Room", "west":"Security Room" },
+
+    'unlocking tool': [item_pistol, item_shotgun, item_grenade, item_smoke, item_smg, item_rpg, item_fakegun, item_axe],
 
     "items": [all_items["id"]],
 
     "uses": [all_items['pig mask'], all_items["kirill mask"], all_items["clown mask"], all_items["boiler suit"], all_items["ghost buster suit"], all_items["white overalls"],
              all_items["pistol"], all_items["shotgun"], all_items["grenade"], all_items["smoke bomb"], all_items["smg"], all_items["rpg"], all_items["fake gun"], all_items["axe"],
              all_items["id"], all_items["password"]]
+}
+
+room_cctv = {
+    'name': 'CCTV Room',
+    'description':
+    '''You are standing in a dark dank small room with 6 different monitors and an old vcr recording machince
+    you think, god this banks security system is dismally poor, even a student could rob this place''',
+
+    'exits' : {'east': 'Security Room'},
+
+    'locked exits' : {},
+
+    'unlocking tool' : [],
+    'items' : [all_items['tape']],
+
+    'uses' : []
 }
 
 room_vault_door = {
@@ -41,7 +65,11 @@ room_vault_door = {
     """You go down a flight of stairs to the vault Door. You see a massive 
     vault door. You need to think of a way to get past.""",
 
-    "exits": {"south": "Front Desk", "north":"Vault"},
+    "exits": {"south": "Front Desk"},
+
+    'locked exits': {"north":"Vault"},
+
+    'unlocking tool' : [item_id, item_C4, item_drill, item_stethoscopese],
 
     "items":[],
 
@@ -59,6 +87,10 @@ room_vault = {
 
     "exits": {"south": "Vault Door"},
 
+    'locked exits': {},
+    'unlocking tool' : [],
+
+
     "items": [all_items["money"]],
 
     "uses": [all_items['pig mask'], all_items["kirill mask"], all_items["clown mask"], all_items["boiler suit"], all_items["ghost buster suit"], all_items["white overalls"]]
@@ -75,6 +107,9 @@ room_security = {
 
     "exits": {"east": "Front Desk"},
 
+    'locked exits': {'west': 'CCTV Room'},
+    'unlocking tool' : [item_password],
+
     "items": [all_items["tape"]],
 
     "uses": [all_items['pig mask'], all_items["kirill mask"], all_items["clown mask"], all_items["boiler suit"], all_items["ghost buster suit"], all_items["white overalls"]]
@@ -90,6 +125,9 @@ room_break = {
 
     "exits": {"west": "Front Desk"},
 
+    'locked exits': {},
+    'unlocking tool' : [],
+
     "items": [all_items["password"]],
 
     "uses": [all_items['pig mask'], all_items["kirill mask"], all_items["clown mask"], all_items["boiler suit"], all_items["ghost buster suit"], all_items["white overalls"]]
@@ -103,6 +141,9 @@ room_van = {
         You now start to regret your choice since its just you""",
 
     "exits": {"west": "Gun Store", "east":"Fireworks Store", "north":"Foyer"},
+
+    'locked exits': {},
+    'unlocking tool' : [],
 
     "items": [],
 
@@ -120,6 +161,9 @@ room_gun = {
 
     "exits": {"east": "Van", "west":"Hardware Store"},
 
+    'locked exits': {},
+    'unlocking tool' : [],
+
     "items": [all_items["pistol"], all_items["shotgun"], all_items["grenade"], all_items["smoke bomb"], all_items["smg"], all_items["rpg"]],
 
     'uses': []
@@ -135,6 +179,9 @@ room_firework = {
         so close to the bank""",
 
     "exits": {"west": "Van", "east": "Costume Store"},
+
+    'locked exits': {},
+    'unlocking tool' : [],
 
     "items": [all_items["sparkler"], all_items["cartoon bomb"], all_items["C4"], all_items["twizzler"]],
 
@@ -153,6 +200,9 @@ room_costume = {
 
     "exits": {"east": "Fireworks Store"},
 
+    'locked exits': {},
+    'unlocking tool' : [],
+
     "items": [all_items['pig mask'], all_items["kirill mask"], all_items["clown mask"], all_items["boiler suit"], all_items["ghost buster suit"], all_items["back pack"], all_items["sports bag"], all_items["fake gun"]],
 
     'uses': []
@@ -167,6 +217,9 @@ room_hardware = {
 
     "exits": {"east": "Gun Store"},
 
+    'locked exits': {},
+    'unlocking tool' : [],
+
     "items": [all_items["drill"], all_items["white overalls"], all_items["axe"], all_items["stethoscopes"]],
 
     'uses': []
@@ -179,6 +232,7 @@ rooms = {
     "Vault Door":room_vault_door,
     "Vault": room_vault,
     "Security Room": room_security,
+    'CCTV Room': room_cctv,
     "Break Room": room_break,
     "Van":room_van,
     "Gun Store":room_gun,

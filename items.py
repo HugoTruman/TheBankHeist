@@ -35,6 +35,7 @@ item_money = {
         "This mountain of cash is almost enough to pay off your student debt.",
     "mass": 0.3,
     "value":0,
+    'type':'money'
 
 }
 
@@ -48,6 +49,7 @@ item_tape = {
     "mass": 0.3,
     "value":0,
     "discrete":-40,
+    'type': 'misc'
 }
 
 item_pistol = {
@@ -167,7 +169,8 @@ item_pigmask = {
     "value":7,
     "discrete":-25,
     "use":"You put on the musk. No one will know who you are. They will just "
-                 "be confused a pig is robbing a bank."
+                 "be confused a pig is robbing a bank.",
+    'type': 'clothes'
 }
 
 item_kirillmask = {
@@ -182,7 +185,9 @@ item_kirillmask = {
     "value":15,
     "discrete":-40,
     "use":"You put on the musk. No one will know who you are. They will just "
-                 "be confused why is Kirill robbing a bank."
+                 "be confused why is Kirill robbing a bank.",
+
+    'type': 'clothes'
 }
 
 item_clownmask = {
@@ -197,7 +202,9 @@ item_clownmask = {
     "value":7,
     "discrete":-20,
     "use":"You put on the musk. No one will know who you are. They will just "
-                 "be confused a clown is robbing a bank."
+                 "be confused a clown is robbing a bank.",
+
+    'type': 'clothes'
 }
 
 item_boilersuit = {
@@ -211,7 +218,8 @@ item_boilersuit = {
     "value":15,
     "discrete":-10,
     "use":"You put on the Suit. You think no one will know who you are "
-                 "just the banks plumber."
+                 "just the banks plumber.",
+    'type': 'clothes'
 }
 
 item_ghostbusters = {
@@ -227,7 +235,8 @@ item_ghostbusters = {
     "discrete":-20,
     "use":"You put on the Suit. You think no one will know who you are "
                  "just the banks on site ghost buster. You cant help but sing "
-                 "the song in your head."
+                 "the song in your head.",
+    'type': 'clothes'
 }
 
 item_backpack = {
@@ -243,7 +252,8 @@ item_backpack = {
     "use":"You put on the back pack and feel like you are back at uni. "
               "You start to have PTSD about being back but wears off after "
               "a few hours when you start thinking about all the stuff you"
-              "can fit in there."
+              "can fit in there.",
+    'type': 'misc'
 }
 
 item_sportsbag = {
@@ -257,7 +267,8 @@ item_sportsbag = {
     "value":50,
     "discrete":1,
     "use":"You put on the back pack and instantly feel like you can "
-              "carry more stuff. Strange."
+              "carry more stuff. Strange.",
+    'type': 'misc'
 }
 
 item_fakegun = {
@@ -287,7 +298,8 @@ item_twizzler = {
         "This is very very pointless this can not be used in anyway.",
     "mass":.5,
     "value":100,
-    "discrete":100
+    "discrete":100,
+    'type': 'misc'
 }
 
 item_C4 = {
@@ -315,7 +327,8 @@ item_cartoonbomb = {
         "Does not do much apart form look good",
     "mass":5,
     "value":10,
-    "discrete":10
+    "discrete":10,
+    'type': 'misc'
 }
 
 item_sparkler = {
@@ -327,7 +340,8 @@ item_sparkler = {
         "Looks pretty",
     "mass":0.1,
     "value":2,
-    "discrete":5
+    "discrete":5,
+    'type': 'misc'
 }
 
 
@@ -359,7 +373,8 @@ item_whiteoveralls = {
     "value":5,
     "discrete":3,
     "use":"You put on the Suit. You think no one will know who you are "
-                 "just the banks painter. But you are not wearing a mask."
+                 "just the banks painter. But you are not wearing a mask.",
+    'type': 'clothes'
 }
 
 
