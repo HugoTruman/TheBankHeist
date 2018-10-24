@@ -73,11 +73,18 @@ def sum_carry_items_weight():
 		total += x['mass']
 	return total
 
-"""
+def merge_two_dicts(dict1, dict2):
+    new_dict = dict1.copy()   # start with x's keys and values
+    new_dict.update(dict2)    # modifies z with y's keys and values & returns None
+    return new_dict
+
 def execute_use(item_id):
 	global current_room
-	if item_id in current_room['uses'] and item_id in inventory:
-"""
+	if all_items[item_id] in current_room['uses'] and all_items[item_id] in inventory:
+		if all_items[item_id]['type'] == 'entry':
+			print (all_items[item_id]['use'])
+			current_room['exits'] = merge_two_dicts(current_room['exits'],current_room['locked exits'])
+
 
 
 
