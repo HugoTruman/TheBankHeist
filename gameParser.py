@@ -3,9 +3,9 @@ import string
 #Define a list of words not to remove from input
 important_words = ["go","take","buy", "use",
 				"north","east","south","west",
-				"rpg","id","password","money","tape","pistol","shotgun","grenade","smoke bomb", "smg",
-				"kirill mask", "clown mask", "boiler suit", "ghost buster suit", "back pack", "sports bag",
-				"fake gun", "twizzler", "C4", "cartoon bomb", "sparkler", "drill", "white overalls", "axe", "stethoscopes"
+				"rpg","id","password","money","tape","pistol","shotgun","grenade","smoke bomb", "smg", 'pig',
+				"kirill", "clown", "boiler", "ghost", "back", "sports",
+				"fake", "twizzler", "C4", "cartoon bomb", "sparkler", "drill", "white overalls", "axe", "stethoscopes"
 				]
 
 def filter_words(words):

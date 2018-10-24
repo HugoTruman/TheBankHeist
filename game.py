@@ -80,10 +80,15 @@ def merge_two_dicts(dict1, dict2):
 
 def execute_use(item_id):
 	global current_room
+	global discrete
 	if all_items[item_id] in current_room['uses'] and all_items[item_id] in inventory:
 		if all_items[item_id]['type'] == 'entry':
 			print (all_items[item_id]['use'])
+			discrete += all_items[item_id]['discrete']
 			current_room['exits'] = merge_two_dicts(current_room['exits'],current_room['locked exits'])
+		elif all_items[item_id]['type'] == ' clothes':
+			print (all_items[item_id]['use'])
+			discrete += all_items[item_id]['discrete']
 
 
 
@@ -109,18 +114,21 @@ def execute_take(item_id):
 		if cur_item not in current_room['items']:
 			print("You cannot take that.")
 		else:
-			if sum_carry_items_weight() + cur_item['mass'] > 9000000:
-				print('You cannot carry more than 3KG, you are currently carrying ' + str(sum_carry_items_weight()) + 'KG')
+			if cur_item['value'] > 0 :
+				print("You have to buy that, criminal!")
 			else:
-				inventory.append(cur_item)
-				current_room['items'].remove(cur_item)
-				print()
-				print('You picked up ' + cur_item['name'])
-				print()
-				print('ITEM DESCRIPTION: ' + cur_item['description'])
-				print()
-				print('ITEM MASS:  '+ str(cur_item['mass']))
-				print()
+				if sum_carry_items_weight() + cur_item['mass'] > 9000000:
+					print('You cannot carry more than 3KG, you are currently carrying ' + str(sum_carry_items_weight()) + 'KG')
+				else:
+					inventory.append(cur_item)
+					current_room['items'].remove(cur_item)
+					print()
+					print('You picked up ' + cur_item['name'])
+					print()
+					print('ITEM DESCRIPTION: ' + cur_item['description'])
+					print()
+					print('ITEM MASS:  '+ str(cur_item['mass']))
+					print()
 	
 
 def execute_drop(item_id):

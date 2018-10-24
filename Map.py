@@ -16,7 +16,7 @@ room_foyer = {
 
     "items": [],
 
-    "uses": [all_items['pig mask'], all_items["kirill mask"], all_items["clown mask"], all_items["boiler suit"], all_items["ghost buster suit"], all_items["white overalls"]]
+    "uses": [all_items['pig'], all_items["kirill"], all_items["clown"], all_items["boiler"], all_items["ghost"], all_items["white"]]
 }
 
 room_front_desk = {
@@ -37,8 +37,8 @@ room_front_desk = {
 
     "items": [all_items["id"]],
 
-    "uses": [all_items['pig mask'], all_items["kirill mask"], all_items["clown mask"], all_items["boiler suit"], all_items["ghost buster suit"], all_items["white overalls"],
-             all_items["pistol"], all_items["shotgun"], all_items["grenade"], all_items["smoke bomb"], all_items["smg"], all_items["rpg"], all_items["fake gun"], all_items["axe"],
+    "uses": [all_items['pig'], all_items["kirill"], all_items["clown"], all_items["boiler"], all_items["ghost"], all_items["white"],
+             all_items["pistol"], all_items["shotgun"], all_items["grenade"], all_items["smoke"], all_items["smg"], all_items["rpg"], all_items["fake"], all_items["axe"],
              all_items["id"], all_items["password"]]
 }
 
@@ -73,7 +73,7 @@ room_vault_door = {
 
     "items":[],
 
-    "uses": [all_items['pig mask'], all_items["kirill mask"], all_items["clown mask"], all_items["boiler suit"], all_items["ghost buster suit"], all_items["white overalls"],
+    "uses": [all_items['pig'], all_items["kirill"], all_items["clown"], all_items["boiler"], all_items["ghost"], all_items["white"],
              all_items["C4"], all_items["drill"], all_items["stethoscopes"]]
 }
 
@@ -93,7 +93,7 @@ room_vault = {
 
     "items": [all_items["money"]],
 
-    "uses": [all_items['pig mask'], all_items["kirill mask"], all_items["clown mask"], all_items["boiler suit"], all_items["ghost buster suit"], all_items["white overalls"]]
+    "uses": [all_items['pig'], all_items["kirill"], all_items["clown"], all_items["boiler"], all_items["ghost"], all_items["white"]]
 }
 
 room_security = {
@@ -112,7 +112,7 @@ room_security = {
 
     "items": [all_items["tape"]],
 
-    "uses": [all_items['pig mask'], all_items["kirill mask"], all_items["clown mask"], all_items["boiler suit"], all_items["ghost buster suit"], all_items["white overalls"]]
+    "uses": [all_items['pig'], all_items["kirill"], all_items["clown"], all_items["boiler"], all_items["ghost"], all_items["white"]]
 }
 
 room_break = {
@@ -130,7 +130,7 @@ room_break = {
 
     "items": [all_items["password"]],
 
-    "uses": [all_items['pig mask'], all_items["kirill mask"], all_items["clown mask"], all_items["boiler suit"], all_items["ghost buster suit"], all_items["white overalls"]]
+    "uses": [all_items['pig'], all_items["kirill"], all_items["clown"], all_items["boiler"], all_items["ghost"], all_items["white"]]
 }
 
 room_van = {
@@ -147,7 +147,7 @@ room_van = {
 
     "items": [],
 
-    "uses": [all_items['pig mask'], all_items["kirill mask"], all_items["clown mask"], all_items["boiler suit"], all_items["ghost buster suit"], all_items["white overalls"]]
+    "uses": [all_items['pig'], all_items["kirill"], all_items["clown"], all_items["boiler"], all_items["ghost"], all_items["white"]]
 
 }
 
@@ -164,7 +164,7 @@ room_gun = {
     'locked exits': {},
     'unlocking tool' : [],
 
-    "items": [all_items["pistol"], all_items["shotgun"], all_items["grenade"], all_items["smoke bomb"], all_items["smg"], all_items["rpg"]],
+    "items": [all_items["pistol"], all_items["shotgun"], all_items["grenade"], all_items["smoke"], all_items["smg"], all_items["rpg"]],
 
     'uses': []
 
@@ -183,7 +183,7 @@ room_firework = {
     'locked exits': {},
     'unlocking tool' : [],
 
-    "items": [all_items["sparkler"], all_items["cartoon bomb"], all_items["C4"], all_items["twizzler"]],
+    "items": [all_items["sparkler"], all_items["cartoon"], all_items["C4"], all_items["twizzler"]],
 
     'uses': []
 
@@ -203,7 +203,7 @@ room_costume = {
     'locked exits': {},
     'unlocking tool' : [],
 
-    "items": [all_items['pig mask'], all_items["kirill mask"], all_items["clown mask"], all_items["boiler suit"], all_items["ghost buster suit"], all_items["back pack"], all_items["sports bag"], all_items["fake gun"]],
+    "items": [all_items['pig'], all_items["kirill"], all_items["clown"], all_items["boiler"], all_items["ghost"], all_items["back"], all_items["sports"], all_items["fake"]],
 
     'uses': []
 
@@ -220,7 +220,7 @@ room_hardware = {
     'locked exits': {},
     'unlocking tool' : [],
 
-    "items": [all_items["drill"], all_items["white overalls"], all_items["axe"], all_items["stethoscopes"]],
+    "items": [all_items["drill"], all_items["white"], all_items["axe"], all_items["stethoscopes"]],
 
     'uses': []
 
