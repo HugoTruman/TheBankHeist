@@ -74,11 +74,13 @@ def sum_carry_items_weight():
 	return total
 
 def merge_two_dicts(dict1, dict2):
-    new_dict = dict1.copy()   # start with x's keys and values
-    new_dict.update(dict2)    # modifies z with y's keys and values & returns None
+	#This function merges two dictionairys together
+    new_dict = dict1.copy()   
+    new_dict.update(dict2)    
     return new_dict
 
 def execute_use(item_id):
+	#This function executes a use command on an item
 	global current_room
 	global discrete
 	if all_items[item_id] in current_room['uses'] and all_items[item_id] in inventory:
@@ -86,9 +88,10 @@ def execute_use(item_id):
 			print (all_items[item_id]['use'])
 			discrete += all_items[item_id]['discrete']
 			current_room['exits'] = merge_two_dicts(current_room['exits'],current_room['locked exits'])
-		elif all_items[item_id]['type'] == ' clothes':
+		elif all_items[item_id]['type'] == 'clothes':
 			print (all_items[item_id]['use'])
 			discrete += all_items[item_id]['discrete']
+			inventory.remove(all_items[item_id])
 
 
 
@@ -117,8 +120,12 @@ def execute_take(item_id):
 			if cur_item['value'] > 0 :
 				print("You have to buy that, criminal!")
 			else:
-				if sum_carry_items_weight() + cur_item['mass'] > 9000000:
-					print('You cannot carry more than 3KG, you are currently carrying ' + str(sum_carry_items_weight()) + 'KG')
+				if sum_carry_items_weight() + cur_item['mass'] > 10:
+					print(
+						'''You cannot carry more than 10KG by yourself, consider buying a bag or something. If you already have one, ease up on the buying stuff,
+						your robbing a bank not going on holiday, Jesus!
+						'''
+						)
 				else:
 					inventory.append(cur_item)
 					current_room['items'].remove(cur_item)
