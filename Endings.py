@@ -1,6 +1,6 @@
 end_shot={
     "name":"Shot",
-    "description":'''The police storm in and shout you cause you have a firearm. Also you were making far too much noise,
+    "description":'''The police storm in and shoot you cause you have a firearm. Also you were making far too much noise,
     and quite frankly making a scene. Typical Americans.
     You are unable to continue. The police have taken you into custody.'''
 }
