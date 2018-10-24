@@ -235,7 +235,6 @@ def menu(exits, room_items, inv_items):
 
 	# Normalise the input
 	normalised_user_input = normalise_input(user_input)
-	print(normalised_user_input)
 	return normalised_user_input
 
 
