@@ -1,7 +1,7 @@
 import string
 
 #Define a list of words not to remove from input
-important_words = ["go","take","buy", "use",
+important_words = ["go","take","buy", "use", 'drop',
 				"north","east","south","west",
 				"rpg","id","password","money","tape","pistol","shotgun","grenade","smoke bomb", "smg", 'pig',
 				"kirill", "clown", "boiler", "ghost", "back", "sports",
