@@ -193,7 +193,8 @@ def execute_buy(item_id):
 def execute_command(command):
 	#This function decides what the user wants to do
 	if 0 == len(command):
-		return
+		print()
+		print('This makes no sense.')
 	if command[0] == "go":
 		if len(command) > 1:
 			execute_go(command[1])

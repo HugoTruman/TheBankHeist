@@ -1,3 +1,50 @@
+rooms = {
+    "Foyer": room_foyer,
+    "Front Desk": room_front_desk,
+    "Vault Door":room_vault_door,
+    "Vault": room_vault,
+    "Security Room": room_security,
+    "Break Room": room_break,
+    "Van":room_van,
+    "Gun Store":room_gun,
+    "Fireworks Store":room_firework,
+    "Costume Store":room_costume,
+    "Hardware Store":room_hardware
+
+
+}
+
+all_items = {
+    "id": item_id,
+    "password": item_password,
+    "money": item_money,
+    "tape": item_tape,
+    "pistol": item_pistol,
+    "shotgun": item_shotgun,
+    "grenade": item_grenade,
+    "smoke bomb": item_smoke,
+    "smg": item_smg,
+    "rpg": item_rpg,
+    "pig mask": item_pigmask,
+    "kirill mask":item_kirillmask,
+    "clown mask":item_clownmask,
+    "boiler suit":item_boilersuit,
+    "ghost buster suit":item_ghostbusters,
+    "back pack":item_backpack,
+    "sports bag":item_sportsbag,
+    "fake gun":item_fakegun,
+    "twizzler":item_twizzler,
+    "C4":item_C4,
+    "cartoon bomb":item_cartoonbomb,
+    "sparkler":item_sparkler,
+    "drill":item_drill,
+    "white overalls":item_whiteoveralls,
+    "axe":item_axe,
+    "stethoscopes":item_stethoscopese
+}
+
+
+
 """
 THIS IS THE ITEM SECTION
 """
@@ -390,34 +437,8 @@ item_stethoscopese = {
                    "You are in, It was quite easy.",
     "opens":rooms["Vault"]
 }
-all_items = {
-    "id": item_id,
-    "password": item_password,
-    "money": item_money,
-    "tape": item_tape,
-    "pistol": item_pistol,
-    "shotgun": item_shotgun,
-    "grenade": item_grenade,
-    "smoke bomb": item_smoke,
-    "smg": item_smg,
-    "rpg": item_rpg,
-    "pig mask": item_pigmask,
-    "kirill mask":item_kirillmask,
-    "clown mask":item_clownmask,
-    "boiler suit":item_boilersuit,
-    "ghost buster suit":item_ghostbusters,
-    "back pack":item_backpack,
-    "sports bag":item_sportsbag,
-    "fake gun":item_fakegun,
-    "twizzler":item_twizzler,
-    "C4":item_C4,
-    "cartoon bomb":item_cartoonbomb,
-    "sparkler":item_sparkler,
-    "drill":item_drill,
-    "white overalls":item_whiteoveralls,
-    "axe":item_axe,
-    "stethoscopes":item_stethoscopese
-}
+
+
 
 """
 THIS IS THE MAP SECTION
@@ -588,18 +609,3 @@ room_hardware = {
 
 }
 
-rooms = {
-    "Foyer": room_foyer,
-    "Front Desk": room_front_desk,
-    "Vault Door":room_vault_door,
-    "Vault": room_vault,
-    "Security Room": room_security,
-    "Break Room": room_break,
-    "Van":room_van,
-    "Gun Store":room_gun,
-    "Fireworks Store":room_firework,
-    "Costume Store":room_costume,
-    "Hardware Store":room_hardware
-
-
-}
