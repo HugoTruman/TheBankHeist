@@ -42,7 +42,7 @@ room_front_desk = {
     "items": [],
 
     "uses": [all_items['pig'], all_items["kirill"], all_items["clown"], all_items["boiler"], all_items["ghost"], all_items["white"],
-             all_items["pistol"], all_items["shotgun"], all_items["grenade"], all_items["smoke"], all_items["smg"], all_items["rpg"], all_items["fake"], all_items["axe"], all_items["password"]]
+             all_items["pistol"], all_items["shotgun"], all_items["grenade"], all_items["smoke"], all_items["smg"], all_items["rpg"], all_items["fake"], all_items["axe"]]
 }
 
 room_cctv = {
